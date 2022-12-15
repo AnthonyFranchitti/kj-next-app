@@ -1,4 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#__next {
+  min-height: 100%;
+}
+
+@layer base {
+  @font-face {
+    font-family: "Inter-Medium";
+    font-weight: normal;
+    font-style: normal;
+    src: local("Inter-Medium"),
+      url("/fonts/Inter/Inter-Medium.woff2") format("woff2"),
+      url("/fonts/Inter/Inter-Medium.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter-Regular";
+    font-weight: normal;
+    font-style: normal;
+    src: local("Inter-Regular"),
+      url("/fonts/Inter/Inter-Regular.woff2") format("woff2"),
+      url("/fonts/Inter/Inter-Regular.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter-Semi-Bold";
+    font-weight: normal;
+    font-style: normal;
+    src: local("Inter-Semi-Bold"),
+      url("/fonts/Inter/Inter-SemiBold.woff2") format("woff2"),
+      url("/fonts/Inter/Inter-SemiBold.woff") format("woff");
+  }
+
+  @font-face {
+    font-family: "Inter-Bold";
+    font-weight: normal;
+    font-style: normal;
+    src: local("Inter-Bold"),
+      url("/fonts/Inter/Inter-Bold.woff2") format("woff2"),
+      url("/fonts/Inter/Inter-Bold.woff") format("woff");
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
 html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter-Regular";
+  font-size: 100%;
+  line-height: 150%;
+  font-weight: 400;
+  color: #000;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -23,4 +86,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
